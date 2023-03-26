@@ -212,7 +212,7 @@ video {
     gap: 2em;
 }
 
-.column img {
+.aboutimg {
     box-shadow: 10px 10px 10px #777;
     max-width: 500px;
 }
