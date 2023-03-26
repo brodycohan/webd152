@@ -205,18 +205,18 @@ video {
     width: 100%;
 }
 
-.team {
+.row {
     display: flex;
     flex-direction: row;
     margin: 1em;
     gap: 2em;
 }
 
-.team img {
+.column img {
     box-shadow: 10px 10px 10px #777;
-    text-align: center;
-    width: 50%;
+    max-width: 500px;
 }
+
 
 
 @media (max-width: 600px) {
@@ -270,6 +270,7 @@ video {
     td:last-of-type {
         border-bottom: 2px solid #1b69b2;
     }
+   
 }
 
 @media (min-width: 600px) {
@@ -327,6 +328,9 @@ video {
         text-align: left;
         padding-left: 1em;
     }
+    .row { display: flex; } 
+    .column { flex: 50%; padding: 10px; }
+    
     @supports(display: grid) {
         nav ul {
             flex-direction: column;
@@ -361,6 +365,13 @@ video {
             "nav main"
             "nav footer"
             / 180px 1fr;
+        }
+        .row { 
+            display: flex; 
+        } 
+        .column { 
+            flex: 50%; 
+            padding: 10px; 
         }
     }
 }
